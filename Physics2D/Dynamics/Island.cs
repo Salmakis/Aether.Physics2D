@@ -29,14 +29,12 @@
 
 using System;
 using System.Diagnostics;
-using nkast.Aether.Physics2D.Common;
-using nkast.Aether.Physics2D.Dynamics.Contacts;
-using nkast.Aether.Physics2D.Dynamics.Joints;
-#if XNAAPI
-using Vector2 = Microsoft.Xna.Framework.Vector2;
-#endif
+using AetherPhysics2D.Common;
+using AetherPhysics2D.Dynamics.Contacts;
+using AetherPhysics2D.Dynamics.Joints;
+using Stride.Core.Mathematics;
 
-namespace nkast.Aether.Physics2D.Dynamics
+namespace AetherPhysics2D.Dynamics
 {
     /// <summary>
     /// This is an internal class.

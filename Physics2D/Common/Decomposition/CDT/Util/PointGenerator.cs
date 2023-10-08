@@ -6,7 +6,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace nkast.Aether.Physics2D.Common.Decomposition.CDT.Util
+namespace AetherPhysics2D.Common.Decomposition.CDT.Util
 {
     internal class PointGenerator
     {

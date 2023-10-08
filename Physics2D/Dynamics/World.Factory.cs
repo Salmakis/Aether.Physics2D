@@ -7,15 +7,13 @@
 
 using System;
 using System.Collections.Generic;
-using nkast.Aether.Physics2D.Collision.Shapes;
-using nkast.Aether.Physics2D.Common;
-using nkast.Aether.Physics2D.Common.Decomposition;
-using nkast.Aether.Physics2D.Dynamics.Joints;
-#if XNAAPI
-using Vector2 = Microsoft.Xna.Framework.Vector2;
-#endif
+using AetherPhysics2D.Collision.Shapes;
+using AetherPhysics2D.Common;
+using AetherPhysics2D.Common.Decomposition;
+using AetherPhysics2D.Dynamics.Joints;
+using Stride.Core.Mathematics;
 
-namespace nkast.Aether.Physics2D.Dynamics
+namespace AetherPhysics2D.Dynamics
 {
     public partial class World
     {

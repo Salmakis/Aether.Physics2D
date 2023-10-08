@@ -27,12 +27,10 @@
 
 using System;
 using System.Diagnostics;
-using nkast.Aether.Physics2D.Common;
-#if XNAAPI
-using Vector2 = Microsoft.Xna.Framework.Vector2;
-#endif
+using AetherPhysics2D.Common;
+using Stride.Core.Mathematics;
 
-namespace nkast.Aether.Physics2D.Collision.Shapes
+namespace AetherPhysics2D.Collision.Shapes
 {
     /// <summary>
     /// This holds the mass data computed for a shape.

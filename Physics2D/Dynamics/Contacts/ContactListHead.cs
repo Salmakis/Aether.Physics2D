@@ -4,7 +4,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace nkast.Aether.Physics2D.Dynamics.Contacts
+namespace AetherPhysics2D.Dynamics.Contacts
 {
     /// <summary>
     /// Head of a circular doubly linked list.

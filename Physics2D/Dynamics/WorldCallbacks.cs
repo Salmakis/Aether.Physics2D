@@ -27,16 +27,14 @@
 * 3. This notice may not be removed or altered from any source distribution. 
 */
 
-using nkast.Aether.Physics2D.Collision;
-using nkast.Aether.Physics2D.Common;
-using nkast.Aether.Physics2D.Controllers;
-using nkast.Aether.Physics2D.Dynamics.Contacts;
-using nkast.Aether.Physics2D.Dynamics.Joints;
-#if XNAAPI
-using Microsoft.Xna.Framework;
-#endif
+using AetherPhysics2D.Collision;
+using AetherPhysics2D.Common;
+using AetherPhysics2D.Controllers;
+using AetherPhysics2D.Dynamics.Contacts;
+using AetherPhysics2D.Dynamics.Joints;
+using Stride.Core.Mathematics;
 
-namespace nkast.Aether.Physics2D.Dynamics
+namespace AetherPhysics2D.Dynamics
 {
     /// <summary>
     /// Called for each fixture found in the query.

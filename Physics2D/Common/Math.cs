@@ -28,13 +28,9 @@
 using System;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
-#if XNAAPI
-using Complex = nkast.Aether.Physics2D.Common.Complex;
-using Vector2 = Microsoft.Xna.Framework.Vector2;
-using Vector3 = Microsoft.Xna.Framework.Vector3;
-#endif
+using Stride.Core.Mathematics;
 
-namespace nkast.Aether.Physics2D.Common
+namespace AetherPhysics2D.Common
 {
     public static class MathUtils
     {

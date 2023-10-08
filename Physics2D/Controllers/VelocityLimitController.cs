@@ -5,10 +5,10 @@
 
 using System;
 using System.Collections.Generic;
-using nkast.Aether.Physics2D.Common.PhysicsLogic;
-using nkast.Aether.Physics2D.Dynamics;
+using AetherPhysics2D.Dynamics;
+using AetherPhysics2D.Common.PhysicsLogic;
 
-namespace nkast.Aether.Physics2D.Controllers
+namespace AetherPhysics2D.Controllers
 {
     /// <summary>
     /// Put a limit on the linear (translation - the movespeed) and angular (rotation) velocity

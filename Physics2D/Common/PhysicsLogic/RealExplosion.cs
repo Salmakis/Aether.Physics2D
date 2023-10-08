@@ -6,18 +6,16 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using nkast.Aether.Physics2D.Collision;
-using nkast.Aether.Physics2D.Collision.Shapes;
-using nkast.Aether.Physics2D.Common;
-using nkast.Aether.Physics2D.Dynamics;
-#if XNAAPI
-using Vector2 = Microsoft.Xna.Framework.Vector2;
-#endif
+using AetherPhysics2D.Collision;
+using AetherPhysics2D.Collision.Shapes;
+using AetherPhysics2D.Dynamics;
+using AetherPhysics2D.Common;
+using Stride.Core.Mathematics;
 
-namespace nkast.Aether.Physics2D.Common.PhysicsLogic
+namespace AetherPhysics2D.Common.PhysicsLogic
 {
     // Original Code by Steven Lu - see http://www.box2d.org/forum/viewtopic.php?f=3&t=1688
-    // Ported to Farseer 3.0 by Nicol·s Hormaz·bal
+    // Ported to Farseer 3.0 by Nicol√°s Hormaz√°bal
 
     internal struct ShapeData
     {

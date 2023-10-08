@@ -27,14 +27,10 @@
 
 using System;
 using System.Diagnostics;
-using nkast.Aether.Physics2D.Common;
-#if XNAAPI
-using Complex = nkast.Aether.Physics2D.Common.Complex;
-using Vector2 = Microsoft.Xna.Framework.Vector2;
-using Vector3 = Microsoft.Xna.Framework.Vector3;
-#endif
+using AetherPhysics2D.Common;
+using Stride.Core.Mathematics;
 
-namespace nkast.Aether.Physics2D.Dynamics.Joints
+namespace AetherPhysics2D.Dynamics.Joints
 {
     // Linear constraint (point-to-line)
     // d = p2 - p1 = x2 + r2 - x1 - r1

@@ -29,14 +29,12 @@
 
 using System.Collections.Generic;
 using System.Diagnostics;
-using nkast.Aether.Physics2D.Collision;
-using nkast.Aether.Physics2D.Collision.Shapes;
-using nkast.Aether.Physics2D.Common;
-#if XNAAPI
-using Vector2 = Microsoft.Xna.Framework.Vector2;
-#endif
+using AetherPhysics2D.Collision;
+using AetherPhysics2D.Collision.Shapes;
+using AetherPhysics2D.Common;
+using Stride.Core.Mathematics;
 
-namespace nkast.Aether.Physics2D.Dynamics.Contacts
+namespace AetherPhysics2D.Dynamics.Contacts
 {
     /// <summary>
     /// A contact edge is used to connect bodies and contacts together

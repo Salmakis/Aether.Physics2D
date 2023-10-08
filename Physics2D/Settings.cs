@@ -26,9 +26,9 @@
 */
 
 using System;
-using nkast.Aether.Physics2D.Common;
+using AetherPhysics2D.Common;
 
-namespace nkast.Aether.Physics2D
+namespace AetherPhysics2D
 {
     public static class Settings
     {

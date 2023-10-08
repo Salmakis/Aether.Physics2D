@@ -27,7 +27,7 @@
 
 using System;
 
-namespace nkast.Aether.Physics2D.Dynamics
+namespace AetherPhysics2D.Dynamics
 {
     [Flags]
     public enum Category

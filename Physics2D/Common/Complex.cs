@@ -1,12 +1,9 @@
 ﻿// Copyright (c) 2017 Kastellanos Nikolaos
 
 using System;
-#if XNAAPI
-using Complex = nkast.Aether.Physics2D.Common.Complex;
-using Vector2 = Microsoft.Xna.Framework.Vector2;
-#endif
+using Stride.Core.Mathematics;
 
-namespace nkast.Aether.Physics2D.Common
+namespace AetherPhysics2D.Common
 {
     public struct Complex
     {

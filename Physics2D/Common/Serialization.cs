@@ -10,14 +10,12 @@ using System.Linq;
 using System.Text;
 using System.Xml;
 using System.Xml.Serialization;
-using nkast.Aether.Physics2D.Collision.Shapes;
-using nkast.Aether.Physics2D.Dynamics;
-using nkast.Aether.Physics2D.Dynamics.Joints;
-#if XNAAPI
-using Vector2 = Microsoft.Xna.Framework.Vector2;
-#endif
+using AetherPhysics2D.Collision.Shapes;
+using AetherPhysics2D.Dynamics;
+using AetherPhysics2D.Dynamics.Joints;
+using Stride.Core.Mathematics;
 
-namespace nkast.Aether.Physics2D.Common
+namespace AetherPhysics2D.Common
 {
     /// <summary>
     /// Serialize the world into an XML file

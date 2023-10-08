@@ -28,13 +28,11 @@
 */
 
 using System;
-using nkast.Aether.Physics2D.Common;
-using nkast.Aether.Physics2D.Dynamics;
-#if XNAAPI
-using Vector2 = Microsoft.Xna.Framework.Vector2;
-#endif
+using AetherPhysics2D.Common;
+using AetherPhysics2D.Dynamics;
+using Stride.Core.Mathematics;
 
-namespace nkast.Aether.Physics2D.Collision
+namespace AetherPhysics2D.Collision
 {
     internal struct Pair : IComparable<Pair>
     {

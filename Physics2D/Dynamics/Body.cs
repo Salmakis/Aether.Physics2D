@@ -31,19 +31,16 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using nkast.Aether.Physics2D.Collision;
-using nkast.Aether.Physics2D.Collision.Shapes;
-using nkast.Aether.Physics2D.Common;
-using nkast.Aether.Physics2D.Common.PhysicsLogic;
-using nkast.Aether.Physics2D.Controllers;
-using nkast.Aether.Physics2D.Dynamics.Contacts;
-using nkast.Aether.Physics2D.Dynamics.Joints;
-#if XNAAPI
-using Complex = nkast.Aether.Physics2D.Common.Complex;
-using Vector2 = Microsoft.Xna.Framework.Vector2;
-#endif
+using AetherPhysics2D.Collision;
+using AetherPhysics2D.Collision.Shapes;
+using AetherPhysics2D.Common;
+using AetherPhysics2D.Common.PhysicsLogic;
+using AetherPhysics2D.Dynamics.Contacts;
+using AetherPhysics2D.Dynamics.Joints;
+using AetherPhysics2D.Controllers;
+using Stride.Core.Mathematics;
 
-namespace nkast.Aether.Physics2D.Dynamics
+namespace AetherPhysics2D.Dynamics
 {
     public partial class Body
     {

@@ -34,7 +34,7 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace nkast.Aether.Physics2D.Common.Decomposition.CDT
+namespace AetherPhysics2D.Common.Decomposition.CDT
 {
     internal enum TriangulationMode
     {

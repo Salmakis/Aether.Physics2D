@@ -22,12 +22,10 @@
 * 3. This notice may not be removed or altered from any source distribution. 
 */
 
-using nkast.Aether.Physics2D.Common;
-#if XNAAPI
-using Vector2 = Microsoft.Xna.Framework.Vector2;
-#endif
+using AetherPhysics2D.Common;
+using Stride.Core.Mathematics;
 
-namespace nkast.Aether.Physics2D.Dynamics
+namespace AetherPhysics2D.Dynamics
 {
     /// <summary>
     /// This is an internal structure.

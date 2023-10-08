@@ -26,13 +26,10 @@
 */
 
 using System.Diagnostics;
-using nkast.Aether.Physics2D.Common;
-#if XNAAPI
-using Complex = nkast.Aether.Physics2D.Common.Complex;
-using Vector2 = Microsoft.Xna.Framework.Vector2;
-#endif
+using AetherPhysics2D.Common;
+using Stride.Core.Mathematics;
 
-namespace nkast.Aether.Physics2D.Dynamics.Joints
+namespace AetherPhysics2D.Dynamics.Joints
 {
     /// <summary>
     /// A motor joint is used to control the relative motion

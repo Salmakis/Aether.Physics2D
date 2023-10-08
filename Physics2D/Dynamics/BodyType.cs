@@ -26,7 +26,7 @@
 */
 
 
-namespace nkast.Aether.Physics2D.Dynamics
+namespace AetherPhysics2D.Dynamics
 {
     /// <summary>
     /// The body type.

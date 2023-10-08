@@ -26,14 +26,11 @@
 */
 
 using System.Diagnostics;
-using nkast.Aether.Physics2D.Common;
-using nkast.Aether.Physics2D.Common.ConvexHull;
-#if XNAAPI
-using Complex = nkast.Aether.Physics2D.Common.Complex;
-using Vector2 = Microsoft.Xna.Framework.Vector2;
-#endif
+using AetherPhysics2D.Common;
+using AetherPhysics2D.Common.ConvexHull;
+using Stride.Core.Mathematics;
 
-namespace nkast.Aether.Physics2D.Collision.Shapes
+namespace AetherPhysics2D.Collision.Shapes
 {
     /// <summary>
     /// Represents a simple non-selfintersecting convex polygon.

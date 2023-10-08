@@ -4,12 +4,10 @@
  */
 
 using System;
-using nkast.Aether.Physics2D.Collision;
-#if XNAAPI
-using Vector2 = Microsoft.Xna.Framework.Vector2;
-#endif
+using AetherPhysics2D.Collision;
+using Stride.Core.Mathematics;
 
-namespace nkast.Aether.Physics2D.Common
+namespace AetherPhysics2D.Common
 {
     /// <summary>
     /// Collection of helper methods for misc collisions.

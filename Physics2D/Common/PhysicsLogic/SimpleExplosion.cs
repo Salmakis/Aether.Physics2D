@@ -5,14 +5,12 @@
 
 using System;
 using System.Collections.Generic;
-using nkast.Aether.Physics2D.Collision;
-using nkast.Aether.Physics2D.Common;
-using nkast.Aether.Physics2D.Dynamics;
-#if XNAAPI
-using Vector2 = Microsoft.Xna.Framework.Vector2;
-#endif
+using AetherPhysics2D.Collision;
+using AetherPhysics2D.Dynamics;
+using AetherPhysics2D.Common;
+using Stride.Core.Mathematics;
 
-namespace nkast.Aether.Physics2D.Common.PhysicsLogic
+namespace AetherPhysics2D.Common.PhysicsLogic
 {
     /// <summary>
     /// Creates a simple explosion that ignores other bodies hiding behind static bodies.

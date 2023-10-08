@@ -4,7 +4,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace nkast.Aether.Physics2D.Dynamics
+namespace AetherPhysics2D.Dynamics
 {
     public class FixtureCollection : IEnumerable<Fixture>
         , ICollection<Fixture>, IList<Fixture>

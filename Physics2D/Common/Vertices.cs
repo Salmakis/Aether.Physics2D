@@ -12,13 +12,10 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
-using nkast.Aether.Physics2D.Collision;
-#if XNAAPI
-using Vector2 = Microsoft.Xna.Framework.Vector2;
-using Matrix = Microsoft.Xna.Framework.Matrix;
-#endif
+using AetherPhysics2D.Collision;
+using Stride.Core.Mathematics;
 
-namespace nkast.Aether.Physics2D.Common
+namespace AetherPhysics2D.Common
 {
     public enum PolygonError
     {
@@ -547,31 +544,6 @@ namespace nkast.Aether.Physics2D.Common
 
             return true;
         }
-
-#if XNAAPI
-        /// <summary>
-        /// Transforms the polygon using the defined matrix.
-        /// </summary>
-        /// <param name="transform">The matrix to use as transformation.</param>
-        public void Transform(ref Matrix transform)
-        {
-            // Transform main polygon
-            for (int i = 0; i < Count; i++)
-                this[i] = Vector2.Transform(this[i], transform);
-
-            // Transform holes
-            if (Holes != null && Holes.Count > 0)
-            {
-                for (int i = 0; i < Holes.Count; i++)
-                {
-                    Vector2[] temp = Holes[i].ToArray();
-                    Vector2.Transform(temp, ref transform, temp);
-
-                    Holes[i] = new Vertices(temp);
-                }
-            }
-        }
-#endif
 
         public override string ToString()
         {

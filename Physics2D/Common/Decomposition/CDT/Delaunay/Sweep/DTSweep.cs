@@ -54,7 +54,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace nkast.Aether.Physics2D.Common.Decomposition.CDT.Delaunay.Sweep
+namespace AetherPhysics2D.Common.Decomposition.CDT.Delaunay.Sweep
 {
     internal static class DTSweep
     {

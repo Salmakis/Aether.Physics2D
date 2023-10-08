@@ -4,16 +4,14 @@
  */
 
 using System.Collections.Generic;
-using nkast.Aether.Physics2D.Collision;
-using nkast.Aether.Physics2D.Collision.Shapes;
-using nkast.Aether.Physics2D.Common;
-using nkast.Aether.Physics2D.Common.PhysicsLogic;
-using nkast.Aether.Physics2D.Dynamics;
-#if XNAAPI
-using Vector2 = Microsoft.Xna.Framework.Vector2;
-#endif
+using AetherPhysics2D.Collision;
+using AetherPhysics2D.Collision.Shapes;
+using AetherPhysics2D.Common;
+using AetherPhysics2D.Dynamics;
+using AetherPhysics2D.Common.PhysicsLogic;
+using Stride.Core.Mathematics;
 
-namespace nkast.Aether.Physics2D.Controllers
+namespace AetherPhysics2D.Controllers
 {
     public sealed class BuoyancyController : Controller
     {

@@ -4,10 +4,10 @@
  */
 
 using System;
-using nkast.Aether.Physics2D.Common.PhysicsLogic;
-using nkast.Aether.Physics2D.Dynamics;
+using AetherPhysics2D.Common.PhysicsLogic;
+using AetherPhysics2D.Dynamics;
 
-namespace nkast.Aether.Physics2D.Controllers
+namespace AetherPhysics2D.Controllers
 {
     public abstract class Controller : FilterData
     {
@@ -15,10 +15,6 @@ namespace nkast.Aether.Physics2D.Controllers
 
         public bool Enabled = true;
         public World World { get; internal set; }
-
-        public Controller()
-        {
-        }
 
         public override bool IsActiveOn(Body body)
         {

@@ -3,7 +3,7 @@
  * Microsoft Permissive License (Ms-PL) v1.1
  */
 
-namespace nkast.Aether.Physics2D.Common.Decomposition.Seidel
+namespace AetherPhysics2D.Common.Decomposition.Seidel
 {
     internal class Sink : Node
     {

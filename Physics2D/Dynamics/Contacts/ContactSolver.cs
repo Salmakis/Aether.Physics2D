@@ -29,19 +29,14 @@
 
 using System;
 using System.Diagnostics;
-using nkast.Aether.Physics2D.Collision;
-using nkast.Aether.Physics2D.Collision.Shapes;
-using nkast.Aether.Physics2D.Common;
-#if XNAAPI
-using Complex = nkast.Aether.Physics2D.Common.Complex;
-using Vector2 = Microsoft.Xna.Framework.Vector2;
-#endif
-#if NET40 || NET45 || NETSTANDARD2_0 || W10
+using AetherPhysics2D.Collision;
+using AetherPhysics2D.Collision.Shapes;
+using AetherPhysics2D.Common;
 using System.Threading;
 using System.Threading.Tasks;
-#endif
+using Stride.Core.Mathematics;
 
-namespace nkast.Aether.Physics2D.Dynamics.Contacts
+namespace AetherPhysics2D.Dynamics.Contacts
 {
     public sealed class ContactPositionConstraint
     {

@@ -27,13 +27,10 @@
 
 using System;
 using System.Diagnostics;
-using nkast.Aether.Physics2D.Common;
-#if XNAAPI
-using Complex = nkast.Aether.Physics2D.Common.Complex;
-using Vector2 = Microsoft.Xna.Framework.Vector2;
-#endif
+using AetherPhysics2D.Common;
+using Stride.Core.Mathematics;
 
-namespace nkast.Aether.Physics2D.Collision
+namespace AetherPhysics2D.Collision
 {
     /// <summary>
     /// Input parameters for CalculateTimeOfImpact

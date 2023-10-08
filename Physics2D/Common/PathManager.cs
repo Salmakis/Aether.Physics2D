@@ -5,16 +5,13 @@
 
 using System;
 using System.Collections.Generic;
-using nkast.Aether.Physics2D.Collision.Shapes;
-using nkast.Aether.Physics2D.Common.Decomposition;
-using nkast.Aether.Physics2D.Dynamics;
-using nkast.Aether.Physics2D.Dynamics.Joints;
-#if XNAAPI
-using Vector2 = Microsoft.Xna.Framework.Vector2;
-using Vector3 = Microsoft.Xna.Framework.Vector3;
-#endif
+using AetherPhysics2D.Collision.Shapes;
+using AetherPhysics2D.Common.Decomposition;
+using AetherPhysics2D.Dynamics;
+using AetherPhysics2D.Dynamics.Joints;
+using Stride.Core.Mathematics;
 
-namespace nkast.Aether.Physics2D.Common
+namespace AetherPhysics2D.Common
 {
     /// <summary>
     /// An easy to use manager for creating paths.

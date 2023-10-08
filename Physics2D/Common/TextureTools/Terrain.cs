@@ -4,16 +4,14 @@
  */
 
 using System.Collections.Generic;
-using nkast.Aether.Physics2D.Collision;
-using nkast.Aether.Physics2D.Common;
-using nkast.Aether.Physics2D.Common.Decomposition;
-using nkast.Aether.Physics2D.Common.PolygonManipulation;
-using nkast.Aether.Physics2D.Dynamics;
-#if XNAAPI
-using Vector2 = Microsoft.Xna.Framework.Vector2;
-#endif
+using AetherPhysics2D.Collision;
+using AetherPhysics2D.Common.Decomposition;
+using AetherPhysics2D.Common.PolygonManipulation;
+using AetherPhysics2D.Dynamics;
+using AetherPhysics2D.Common;
+using Stride.Core.Mathematics;
 
-namespace nkast.Aether.Physics2D.Common.TextureTools
+namespace AetherPhysics2D.Common.TextureTools
 {
     /// <summary>
     /// Simple class to maintain a terrain. It can keep track

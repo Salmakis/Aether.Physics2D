@@ -10,14 +10,12 @@
 
 using System.Collections.Generic;
 using System.Diagnostics;
-using nkast.Aether.Physics2D.Common.Decomposition.Seidel;
-using nkast.Aether.Physics2D.Common;
-using Point = nkast.Aether.Physics2D.Common.Decomposition.Seidel.Point;
-#if XNAAPI
-using Vector2 = Microsoft.Xna.Framework.Vector2;
-#endif
+using AetherPhysics2D.Common.Decomposition.Seidel;
+using AetherPhysics2D.Common;
+using Stride.Core.Mathematics;
+using Point = AetherPhysics2D.Common.Decomposition.Seidel.Point;
 
-namespace nkast.Aether.Physics2D.Common.Decomposition
+namespace AetherPhysics2D.Common.Decomposition
 {
     /// <summary>
     /// Convex decomposition algorithm created by Raimund Seidel
@@ -53,22 +51,22 @@ namespace nkast.Aether.Physics2D.Common.Decomposition
         {
             Debug.Assert(vertices.Count > 3);
 
-            List<Point> compatList = new List<Point>(vertices.Count);
+            List<Seidel.Point> compatList = new List<Seidel.Point>(vertices.Count);
 
             foreach (Vector2 vertex in vertices)
             {
-                compatList.Add(new Point(vertex.X, vertex.Y));
+                compatList.Add(new Seidel.Point(vertex.X, vertex.Y));
             }
 
             Triangulator t = new Triangulator(compatList, sheer);
 
             List<Vertices> list = new List<Vertices>();
 
-            foreach (List<Point> triangle in t.Triangles)
+            foreach (List<Seidel.Point> triangle in t.Triangles)
             {
                 Vertices outTriangles = new Vertices(triangle.Count);
 
-                foreach (Point outTriangle in triangle)
+                foreach (Seidel.Point outTriangle in triangle)
                 {
                     outTriangles.Add(new Vector2(outTriangle.X, outTriangle.Y));
                 }
@@ -87,11 +85,11 @@ namespace nkast.Aether.Physics2D.Common.Decomposition
         /// <returns>A list of trapezoids</returns>
         public static List<Vertices> ConvexPartitionTrapezoid(Vertices vertices, float sheer = 0.001f)
         {
-            List<Point> compatList = new List<Point>(vertices.Count);
+            List<Seidel.Point> compatList = new List<Seidel.Point>(vertices.Count);
 
             foreach (Vector2 vertex in vertices)
             {
-                compatList.Add(new Point(vertex.X, vertex.Y));
+                compatList.Add(new Seidel.Point(vertex.X, vertex.Y));
             }
 
             Triangulator t = new Triangulator(compatList, sheer);
@@ -102,8 +100,8 @@ namespace nkast.Aether.Physics2D.Common.Decomposition
             {
                 Vertices verts = new Vertices();
 
-                List<Point> points = trapezoid.GetVertices();
-                foreach (Point point in points)
+                List<Seidel.Point> points = trapezoid.GetVertices();
+                foreach (Seidel.Point point in points)
                 {
                     verts.Add(new Vector2(point.X, point.Y));
                 }

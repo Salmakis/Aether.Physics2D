@@ -3,9 +3,9 @@
  * Microsoft Permissive License (Ms-PL) v1.1
  */
 
-using nkast.Aether.Physics2D.Dynamics;
+using AetherPhysics2D.Dynamics;
 
-namespace nkast.Aether.Physics2D.Common.PhysicsLogic
+namespace AetherPhysics2D.Common.PhysicsLogic
 {
     public abstract class PhysicsLogic : FilterData
     {

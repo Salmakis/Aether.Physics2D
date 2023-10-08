@@ -5,7 +5,7 @@
 
 using System.Collections.Generic;
 
-namespace nkast.Aether.Physics2D.Common.Decomposition.Seidel
+namespace AetherPhysics2D.Common.Decomposition.Seidel
 {
     // Node for a Directed Acyclic graph (DAG)
     internal abstract class Node

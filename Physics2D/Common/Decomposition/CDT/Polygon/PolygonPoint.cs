@@ -39,7 +39,7 @@
 // Future possibilities
 //   Documentation!
 
-namespace nkast.Aether.Physics2D.Common.Decomposition.CDT.Polygon
+namespace AetherPhysics2D.Common.Decomposition.CDT.Polygon
 {
     internal class PolygonPoint : TriangulationPoint
     {

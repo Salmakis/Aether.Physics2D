@@ -7,7 +7,7 @@
 
 using System;
 
-namespace nkast.Aether.Physics2D.Common.PhysicsLogic
+namespace AetherPhysics2D.Common.PhysicsLogic
 {
     [Flags]
     public enum ControllerCategory
